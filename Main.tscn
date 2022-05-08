@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://drawn-sheep-dolly-sheep-296589.png" type="Texture" id=1]
+[ext_resource path="res://Sheep.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Sheep.cs" type="Script" id=3]
+[ext_resource path="res://BaaButton.cs" type="Script" id=4]
+
+[sub_resource type="ImageTexture" id=1]
+
+[node name="Sheep" type="Sprite"]
+position = Vector2( 476, 262 )
+scale = Vector2( 0.206818, 0.206818 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -524.674
+margin_top = -365.91
+margin_right = -393.674
+margin_bottom = -351.91
+text = "Baa Baa Black Sheep"
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.005
+anchor_top = 0.006
+anchor_right = 0.005
+anchor_bottom = 0.006
+margin_left = -105.938
+margin_top = -464.62
+margin_right = 72.0619
+margin_bottom = -384.62
+text = "Baa Baa"
+icon = SubResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_description_": "This is a button"
+}
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="Button"]
+position = Vector2( 544.33, 402.199 )
+stream = ExtResource( 2 )
