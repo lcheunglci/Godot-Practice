@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ui/blue_button00.png" type="Texture" id=1]
+[ext_resource path="res://ui/blue_button02.png" type="Texture" id=2]
+[ext_resource path="res://ui/blue_button03.png" type="Texture" id=3]
+[ext_resource path="res://ui/blue_button01.png" type="Texture" id=4]
+[ext_resource path="res://ui/blue_button04.png" type="Texture" id=5]
+[ext_resource path="res://fonts/MyFont.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scripts/CustomButton.cs" type="Script" id=7]
+
+[node name="CustomButton" type="Control"]
+anchor_right = 0.187
+anchor_bottom = 0.083
+margin_right = -0.488007
+margin_bottom = 0.199997
+script = ExtResource( 7 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 190.0
+margin_bottom = 49.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 2 )
+texture_disabled = ExtResource( 3 )
+texture_focused = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 56.0
+margin_top = 13.0
+margin_right = 134.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 6 )
+text = "Button"
+align = 1

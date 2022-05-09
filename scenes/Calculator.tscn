@@ -1,0 +1,137 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/Size80.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/kenvector_future.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 2 )
+
+[node name="Calculator" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 136.0
+margin_right = 552.0
+margin_bottom = 226.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "00000000"
+
+[node name="KeyPad" type="Node2D" parent="."]
+position = Vector2( 136, 248 )
+
+[node name="Button-1" type="Button" parent="KeyPad"]
+margin_right = 100.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "1"
+
+[node name="Button-2" type="Button" parent="KeyPad"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "2"
+
+[node name="Button-3" type="Button" parent="KeyPad"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "3"
+
+[node name="Button-4" type="Button" parent="KeyPad"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 204.0
+custom_fonts/font = ExtResource( 1 )
+text = "4"
+
+[node name="Button-5" type="Button" parent="KeyPad"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 204.0
+margin_bottom = 204.0
+custom_fonts/font = ExtResource( 1 )
+text = "5"
+
+[node name="Button-6" type="Button" parent="KeyPad"]
+margin_left = 208.0
+margin_top = 104.0
+margin_right = 308.0
+margin_bottom = 204.0
+custom_fonts/font = ExtResource( 1 )
+text = "6"
+
+[node name="Button-7" type="Button" parent="KeyPad"]
+margin_top = 208.0
+margin_right = 100.0
+margin_bottom = 308.0
+custom_fonts/font = ExtResource( 1 )
+text = "7"
+
+[node name="Button-8" type="Button" parent="KeyPad"]
+margin_left = 104.0
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+custom_fonts/font = ExtResource( 1 )
+text = "8"
+
+[node name="Button-9" type="Button" parent="KeyPad"]
+margin_left = 208.0
+margin_top = 208.0
+margin_right = 308.0
+margin_bottom = 308.0
+custom_fonts/font = ExtResource( 1 )
+text = "9"
+
+[node name="Button-10" type="Button" parent="KeyPad"]
+margin_left = 104.0
+margin_top = 312.0
+margin_right = 204.0
+margin_bottom = 412.0
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+
+[node name="Operators" type="Node2D" parent="."]
+position = Vector2( 456, 248 )
+
+[node name="Button-Plus" type="Button" parent="Operators"]
+margin_right = 100.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "+"
+
+[node name="Button-Minus" type="Button" parent="Operators"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 204.0
+custom_fonts/font = ExtResource( 1 )
+text = "-"
+
+[node name="Button-Multiply" type="Button" parent="Operators"]
+margin_top = 208.0
+margin_right = 100.0
+margin_bottom = 308.0
+custom_fonts/font = ExtResource( 1 )
+text = "*"
+
+[node name="Button-Divide" type="Button" parent="Operators"]
+margin_top = 312.0
+margin_right = 100.0
+margin_bottom = 412.0
+custom_fonts/font = ExtResource( 1 )
+text = "/"
+
+[node name="Button-Equals" type="Button" parent="Operators"]
+margin_top = 416.0
+margin_right = 100.0
+margin_bottom = 516.0
+custom_fonts/font = ExtResource( 1 )
+text = "="
